@@ -12,6 +12,7 @@ phases:
     commands:
       - echo Testing Java Project
       - java -version
+      - npm install --silent
       - mvn compile
       - mvn test
       - echo Finished Testing Java Project
