@@ -11,10 +11,9 @@ phases:
   pre_build:
     commands:
       - echo Testing Java Project
-      - java -version
       - npm install --silent
-      - mvn compile
-      - mvn test
+      - java -version
+      - mvn test || node result.js
       - echo Finished Testing Java Project
   build:
     commands:
