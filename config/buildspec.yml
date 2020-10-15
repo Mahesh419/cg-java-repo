@@ -14,9 +14,11 @@ phases:
       - echo Testing Java Project
       - npm install --silent
       - java -version
-      - mvn test || node result.js
+      - mvn test || echo "tested"
       - cd target/surefire-reports
       - ls
+      - cd config
+      - node result.js
       - echo Finished Testing Java Project
   build:
     commands:
