@@ -7,7 +7,6 @@ phases:
       java: openjdk8   
     commands:
       - echo Installing Project dependencies
-      - mvn install
       - echo Finished Installing Project dependencies
   pre_build:
     commands:
