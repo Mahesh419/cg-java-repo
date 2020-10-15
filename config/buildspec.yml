@@ -4,7 +4,6 @@ phases:
   install:
     runtime-versions:
       nodejs: 10     
-      java: openjdk8   
     commands:
       - echo Installing Project dependencies
       - echo Finished Installing Project dependencies
