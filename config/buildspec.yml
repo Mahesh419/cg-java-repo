@@ -15,13 +15,12 @@ phases:
       - mvn test || echo "tested"
       - cd target/surefire-reports
       - ls
-      - cd config
+      - cd ../../config
       - node result.js
       - echo Finished Testing Java Project
   build:
     commands:
       - echo Building Project
-      - ng build
       - echo Finished Building
 
 cache:
