@@ -7,6 +7,7 @@ phases:
       java: openjdk8   
     commands:
       - echo Installing Project dependencies
+      - mvn install
       - echo Finished Installing Project dependencies
   pre_build:
     commands:
@@ -14,6 +15,8 @@ phases:
       - npm install --silent
       - java -version
       - mvn test || node result.js
+      - cd target/surefire-reports
+      - ls
       - echo Finished Testing Java Project
   build:
     commands:
