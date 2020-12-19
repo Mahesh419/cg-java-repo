@@ -8,8 +8,8 @@ package com.coders.common.model;
 public class Customer  {
 
 	private Integer id;
-	private String name;
-	private String company;
+	private String Name;
+	private String Comany;
 
 	public Integer getId() {
 		return id;
@@ -20,11 +20,11 @@ public class Customer  {
 	}
 
 	public String getName() {
-		return name;
+		return Name;
 	}
 
-	public void setName(String name) {
-		this.name = name;
+	public void setName(String Name) {
+		this.Name = Name;
 	}
 
 	public String getCompany() {
